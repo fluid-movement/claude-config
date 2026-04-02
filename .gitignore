@@ -1,0 +1,26 @@
+# Ignore everything by default
+*
+.*
+
+# --- Portable config: unignore these ---
+!.gitignore
+!CLAUDE.md
+!settings.json
+!keybindings.json
+
+# Directories with full contents
+!memory/
+!memory/**
+!skills/
+!skills/**
+!commands/
+!commands/**
+!hooks/
+!hooks/**
+
+# Plugins: config files only (not fetched repos/marketplace data)
+!plugins/
+plugins/*
+!plugins/config.json
+# installed_plugins.json and known_marketplaces.json contain absolute paths — auto-generated, not portable
+!plugins/blocklist.json

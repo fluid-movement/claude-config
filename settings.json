@@ -1,0 +1,166 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls *)",
+      "Bash(ls)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(grep *)",
+      "Bash(find *)",
+      "Bash(pwd)",
+      "Bash(echo *)",
+      "Bash(wc *)",
+      "Bash(which *)",
+      "Bash(whoami)",
+      "Bash(uname *)",
+      "Bash(df *)",
+      "Bash(du *)",
+      "Bash(ps *)",
+      "Bash(env)",
+      "Bash(printenv *)",
+      "Bash(file *)",
+      "Bash(stat *)",
+      "Bash(type *)",
+      "Bash(man *)",
+      "Bash(help *)",
+      "Bash(diff *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(cut *)",
+      "Bash(tr *)",
+      "Bash(sed *)",
+      "Bash(awk *)",
+      "Bash(xargs *)",
+      "Bash(tee *)",
+      "Bash(less *)",
+      "Bash(more *)",
+      "Bash(tree *)",
+      "Bash(jq *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git stash list)",
+      "Bash(git blame *)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm install *)",
+      "Bash(npm install)",
+      "Bash(npm i *)",
+      "Bash(npm i)",
+      "Bash(npm ci)",
+      "Bash(npm ci *)",
+      "Bash(npm run *)",
+      "Bash(npm list *)",
+      "Bash(npm ls *)",
+      "Bash(npm outdated *)",
+      "Bash(npx *)",
+      "Bash(yarn install)",
+      "Bash(yarn install *)",
+      "Bash(yarn add *)",
+      "Bash(yarn *)",
+      "Bash(pnpm install)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm add *)",
+      "Bash(pnpm i)",
+      "Bash(pnpm i *)",
+      "Bash(bun install)",
+      "Bash(bun install *)",
+      "Bash(bun add *)",
+      "Bash(bun i)",
+      "Bash(bun i *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(brew install *)",
+      "Bash(brew update)",
+      "Bash(brew upgrade *)",
+      "Bash(date)",
+      "Bash(date *)",
+      "Bash(uptime)",
+      "Bash(hostname)",
+      "Bash(realpath *)",
+      "Bash(basename *)",
+      "Bash(dirname *)",
+      "Bash(readlink *)",
+      "Bash(lsof *)",
+      "Bash(netstat *)",
+      "Bash(ss *)",
+      "Bash(dig *)",
+      "Bash(nslookup *)",
+      "Bash(host *)",
+      "Bash(ping *)",
+      "Bash(open *)",
+      "Bash(pbcopy)",
+      "Bash(pbpaste)",
+      "Bash(tsc *)",
+      "Bash(eslint *)",
+      "Bash(prettier *)",
+      "Bash(mypy *)",
+      "Bash(black *)",
+      "Bash(ruff *)",
+      "Bash(docker ps *)",
+      "Bash(docker ps)",
+      "Bash(docker images *)",
+      "Bash(docker images)",
+      "Bash(docker logs *)",
+      "Bash(gh *)",
+      "Bash(cargo *)",
+      "Bash(go *)",
+      "Bash(eza *)",
+      "Bash(eza)",
+      "Bash(bat *)",
+      "Bash(bat)",
+      "Bash(fd *)",
+      "Bash(fd)",
+      "Bash(rg *)",
+      "Bash(rg)",
+      "Bash(pollo)",
+      "Bash(pollo *)",
+      "Bash(obsidian read *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/notify-if-unfocused.sh Ghostty \"Claude has finished\" \"Claude Code\"",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/notify-if-unfocused.sh Ghostty \"Claude needs your attention\" \"Claude Code\"",
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "svelte@svelte": true
+  },
+  "extraKnownMarketplaces": {
+    "svelte": {
+      "source": {
+        "source": "github",
+        "repo": "sveltejs/ai-tools"
+      }
+    }
+  }
+}

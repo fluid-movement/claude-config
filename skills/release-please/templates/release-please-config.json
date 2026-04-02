@@ -1,0 +1,6 @@
+{
+  "release-type": "RELEASE_TYPE",
+  "packages": {
+    ".": {}
+  }
+}
